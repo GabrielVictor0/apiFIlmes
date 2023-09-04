@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\webapi.Filmes",
+    "\\webapi.Filmes\\Controllers",
+    "\\webapi.Filmes\\Interfaces"
+  ],
+  "SelectedNode": "\\webapi.Filmes\\Interfaces\\IGeneroRepository.cs",
+  "PreviewInSolutionExplorer": false
+}
