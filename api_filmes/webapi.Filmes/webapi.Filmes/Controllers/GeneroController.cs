@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webapi.Filmes.Domains;
 using webapi.Filmes.Interfaces;
@@ -17,6 +18,8 @@ namespace webapi.Filmes.Controllers
 
     //Define que o tipo de resposta da api será no formato JSON
     [Produces("application/json")]
+
+    [Authorize]
 
     //Método controlador que herda da controlle base
     //Onde será criado Endpoints(rotas)
@@ -40,6 +43,7 @@ namespace webapi.Filmes.Controllers
         /// </summary>
         /// <returns>Resposta para o usuário(front-end)</returns>
         [HttpGet]
+        [Authorize (Roles = "True, False")]
         public IActionResult Get()
         {
             try

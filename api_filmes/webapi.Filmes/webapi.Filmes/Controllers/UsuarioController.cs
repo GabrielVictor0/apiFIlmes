@@ -11,6 +11,7 @@ namespace webapi.Filmes.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Produces("application/json")]
+
     public class UsuarioController : ControllerBase
     {
         public UsuarioRepository _usuarioRepository { get; set; }
@@ -60,7 +61,7 @@ namespace webapi.Filmes.Controllers
                     issuer: "webapi.Filmes",
 
                     //destinatário do token
-                    audience: "Webapi.Filmes",
+                    audience: "webapi.Filmes",
 
                     //dados definidos na claims(informações)
                     claims : claims,
